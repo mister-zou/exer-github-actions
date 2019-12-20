@@ -11,8 +11,8 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/15 * * * *'
-  # tags:
-  #   - v0.* 
+  tags:
+    - v0.* 
 
 jobs:
   build:
