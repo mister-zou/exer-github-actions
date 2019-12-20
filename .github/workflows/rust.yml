@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - 'test'
+    paths-ignore:
+      - 'docs/**'
+    paths:
+      - 'src/**'
     tags:
       - v1.* 
   pull_request:
