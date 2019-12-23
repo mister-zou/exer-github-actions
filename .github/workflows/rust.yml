@@ -4,9 +4,17 @@ on:
   push:
     branches:
       - master
+      - 'test'
+    paths-ignore:
+      - 'docs/**'
+    tags:
+      - v1.* 
   pull_request:
     branches:
       - master
+  # schedule:
+  #   # * is a special character in YAML so you have to quote this string
+  #   - cron:  '*/15 * * * *'
 
 jobs:
   build:
