@@ -24,10 +24,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Hello world
-      run: echo Hello world $FIRST_NAME $Last_Name - $GITHUB_ACTOR $GITHUB_ACTION $GITHUB_EVENT_NAME!
+      run: echo Hello world $FIRST_NAME $Last_Name - $GITHUB_ACTOR $GITHUB_ACTION $GITHUB_EVENT_NAME $Secrect!
       env:
         FIRST_NAME: Zou
         Last_Name: Xin
+        Secrect: ${{ secrets.TEST }}
     - name: Build
       run: cargo build --verbose
     - name: Run tests
