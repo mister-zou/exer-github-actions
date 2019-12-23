@@ -1,1 +1,1 @@
-![Status](https://github.com/mister-zou/exer-github-actions/workflows/rust/badge.svg)
+![Status](https://github.com/mister-zou/exer-github-actions/workflows/Rust/badge.svg)
